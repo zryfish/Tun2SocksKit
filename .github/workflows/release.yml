@@ -18,6 +18,10 @@ jobs:
           repository: 'heiher/hev-socks5-tunnel'
           submodules: 'true'
           path: 'temp'
+      - uses: actions/checkout@v3
+        with:
+          repository: 'archerst/hev-socks5-tunnel-iphonesimulator'
+          path: 'fake'
           
       - name: build macos arm64_x86_64
         run: |
